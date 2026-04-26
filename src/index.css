@@ -48,10 +48,17 @@ body {
   }
 }
 
+@utility special-font {
+  & b {
+    font-family: "zentry";
+    font-feature-settings: "ss01" on;
+  }
+}
+
 @layer utilities {
-  /* .border-hsla {
+  .border-hsla {
     @apply border border-white/20;
-  } */
+  }
 
   .nav-hover-btn {
     @apply relative ms-10 font-general text-xs uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
@@ -73,10 +80,10 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
-  .special-font b {
-    font-family: "Zentry";
+  /* .special-font b {
+    font-family: "zentry";
     font-feature-settings: "ss01" on;
-  }
+  } */
 
   .hero-heading {
     @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
@@ -91,17 +98,17 @@ body {
   }
 
   .animated-title {
-    @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
+    @apply flex flex-col gap-1  uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
   }
 
-  /* .animated-word {
+   .animated-word {
     @apply special-font font-zentry font-black opacity-0;
     transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
     transform-origin: 50% 50% -150px !important;
     will-change: opacity, transform;
-  } */
+  } 
 
-  /* .bento-tilt_1 {
+  .bento-tilt_1 {
     @apply relative border-hsla col-span-2 overflow-hidden rounded-md transition-transform duration-300 ease-out;
   }
 
@@ -111,7 +118,7 @@ body {
 
   .bento-title {
     @apply uppercase md:text-6xl text-4xl font-black font-zentry;
-  } */
+  } 
 
   .story-img-container {
     @apply relative md:h-dvh h-[90vh] w-full;
