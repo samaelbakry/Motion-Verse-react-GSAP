@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ id, title, containerClass, leftIcon }) => {
+const Button = ({ id, title, containerClass, leftIcon , rightIcon }) => {
   return (
     <>
       <button
@@ -12,7 +12,7 @@ const Button = ({ id, title, containerClass, leftIcon }) => {
             <div>
                 {title}
             </div>
-            {/* {rightIcon} */}
+            {rightIcon &&  rightIcon}
         </span>
       </button>
     </>
