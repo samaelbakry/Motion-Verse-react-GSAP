@@ -108,7 +108,7 @@ body {
     will-change: opacity, transform;
   } 
 
-  .bento-tilt_1 {
+  /* .bento-tilt_1 {
     @apply relative  col-span-2 overflow-hidden rounded-md transition-transform duration-300 ease-out border border-white/20;;
   }
 
@@ -118,7 +118,7 @@ body {
 
   .bento-title {
     @apply uppercase md:text-6xl text-4xl font-black font-zentry;
-  } 
+  }  */
 
   .story-img-container {
     @apply relative md:h-dvh h-[90vh] w-full;
